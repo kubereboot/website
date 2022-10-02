@@ -1,0 +1,35 @@
+---
+title: "Kured - Kubernetes Reboot Daemon"
+linkTitle: "Kured"
+---
+
+{{< blocks/cover title="Kured - Kubernetes Reboot Daemon" image_anchor="top" >}}
+  <img src="img/kured.png" alt="Kured logo" />
+{{< /blocks/cover >}}
+
+{{% blocks/lead color="primary" %}}
+Kured (KUbernetes REboot Daemon) is a Kubernetes daemonset that
+performs safe automatic node reboots when the need to do so is
+indicated by the package management system of the underlying OS.
+{{% /blocks/lead %}}
+
+{{< blocks/section color="light" >}}
+
+{{% blocks/feature icon="fa-search" %}}
+Watches for the presence of a reboot sentinel file e.g. `/var/run/reboot-required`
+or the successful run of a sentinel command.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-lock" %}}
+Utilises a lock in the API server to ensure only one node reboots at a time.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-user-clock" %}}
+Optionally defers reboots in the presence of active Prometheus alerts or selected pods.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-tasks" %}}
+Cordons & drains worker nodes before reboot, uncordoning them after.
+{{% /blocks/feature %}}
+
+{{< /blocks/section >}}

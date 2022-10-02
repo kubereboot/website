@@ -1,0 +1,24 @@
+[build]
+  publish = "public"
+  command = "make production-build"
+
+[build.environment]
+  GO_VERSION = "1.19"
+  HUGO_VERSION = "0.104.2"
+  NODE_VERSION = "16"
+
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+[context.deploy-preview]
+  command = "make preview-build"
+
+[context.branch-deploy]
+  command = "make branch-build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+  X-Frame-Options = "SAMEORIGIN"
+  Content-Security-Policy = "frame-ancestors 'self'"

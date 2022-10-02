@@ -1,0 +1,30 @@
+baseURL: /
+languageCode: en-gb
+title: Kured
+
+module:
+  proxy: direct
+  imports:
+    - path: github.com/google/docsy
+    - path: github.com/google/docsy/dependencies
+
+params:
+  links:
+    user:
+      - name: Slack
+        url: 'https://cloud-native.slack.com/archives/kured'
+        icon: fab fa-slack
+        desc: Chat with other project developers
+      - name: Twitter
+        url: 'https://twitter.com/kubereboot'
+        icon: fab fa-twitter
+        desc: Follow us on Twitter to get the latest news!
+    developer:
+      - name: GitHub
+        url: 'https://github.com/kubereboot'
+        icon: fab fa-github
+        desc: Development takes place here!
+      - name: YouTube
+        url: 'https://www.youtube.com/playlist?list=PL7wDX91NpJl_rKYrAtd8zr2XszpexS1eE'
+        icon: fab fa-youtube
+        desc: View the Kured Dev meeting recordings
