@@ -262,7 +262,7 @@ probe for active alerts before rebooting, be sure to specify
 When you specify a formatted URL using `--notify-url`, kured will notify
 about draining and rebooting nodes across a list of technologies.
 
-![Notification](img/slack-notification.png)
+![Notification](/img/slack-notification.png)
 
 Alternatively you can use the `--message-template-drain`, `--message-template-reboot` and `--message-template-uncordon` to customize the text of the message, e.g.
 
