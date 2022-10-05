@@ -1,0 +1,48 @@
+name: lychee link Checker
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - uses: actions/cache@v2
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+      - name: Build
+        run: hugo --minify
+      - name: Restore lychee cache
+        uses: actions/cache@v3
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@4a5af7cd2958a2282cefbd9c10f63bdb89982d76
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        with:
+          # Check all markdown and html files in repo (default)
+          args: --exclude '(\$latest|.local)' --verbose --exclude-link-local --no-progress './content/**' './public/**/*.html'
+          # Use json as output format (instead of markdown)
+          format: json
+          # Use different output file path
+          output: /tmp/foo.txt
+          # Fail action on broken links
+          fail: true

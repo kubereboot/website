@@ -374,7 +374,7 @@ You can find the current preferred version of Golang in the [go.mod file](https:
 If you are interested in contributing code to kured, please take a look at
 our [development][development] docs.
 
-[development]: development.md
+[development]: /docs/development
 
 ## Frequently Asked/Anticipated Questions
 

@@ -7,13 +7,13 @@ Slack][slack], reporting or triaging [issues][issues] or contributing code
 to `kured`.
 
 In any case, it will make sense to familiarise yourself with the main
-[README][readme] to understand the different features and options, which is
+[docs][docs] to understand the different features and options, which is
 helpful for testing. The "building" section in particular makes sense if
 you are planning to contribute code.
 
-[slack]: README.md#getting-help
+[slack]: ../community#getting-help
 [issues]: https://github.com/kubereboot/kured/issues
-[readme]: README.md
+[docs]: ../
 
 ## Certificate of Origin
 
@@ -24,7 +24,7 @@ contribution.
 
 We require all commits to be signed. By signing off with your signature, you
 certify that you wrote the patch or otherwise have the right to contribute the
-material by the rules of the [DCO](DCO):
+material by the rules of the [DCO](https://github.com/kubereboot/kured/blob/main/DCO):
 
 `Signed-off-by: Jane Doe <jane.doe@example.com>`
 
