@@ -12,6 +12,9 @@ languages:
 
 module:
   proxy: direct
+  hugoVersion:
+    extended: true
+    min: 0.73.0
   imports:
     - path: github.com/google/docsy
     - path: github.com/google/docsy/dependencies
@@ -48,20 +51,20 @@ params:
     user:
       - name: Slack
         url: 'https://cloud-native.slack.com/archives/kured'
-        icon: fab fa-slack
+        icon: fa-brands fa-slack
         desc: Chat with other project developers
       - name: Twitter
         url: 'https://twitter.com/kubereboot'
-        icon: fab fa-twitter
+        icon: fa-brands fa-twitter
         desc: Follow us on Twitter to get the latest news!
     developer:
       - name: GitHub
         url: 'https://github.com/kubereboot'
-        icon: fab fa-github
+        icon: fa-brands fa-github
         desc: Development takes place here!
       - name: YouTube
         url: 'https://www.youtube.com/playlist?list=PL7wDX91NpJl_rKYrAtd8zr2XszpexS1eE'
-        icon: fab fa-youtube
+        icon: fa-brands fa-youtube
         desc: View the Kured Dev meeting recordings
 
 menus:
