@@ -8,6 +8,10 @@ module:
     - path: github.com/google/docsy
     - path: github.com/google/docsy/dependencies
 
+outputs:
+  home: [HTML]
+  page: [HTML]
+
 params:
   description: Kured (KUbernetes REboot Daemon) is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS.
   copyright: The Kured authors
