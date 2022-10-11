@@ -369,12 +369,12 @@ make
 GO111MODULE=on make
 ```
 
-You can find the current preferred version of Golang in the [go.mod file](go.mod).
+You can find the current preferred version of Golang in the [go.mod file](https://github.com/kubereboot/kured/blob/main/go.mod).
 
 If you are interested in contributing code to kured, please take a look at
 our [development][development] docs.
 
-[development]: DEVELOPMENT.md
+[development]: development.md
 
 ## Frequently Asked/Anticipated Questions
 

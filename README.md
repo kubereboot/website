@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c23db575-eeab-4d0b-9326-5ee9047b5244/deploy-status)](https://app.netlify.com/sites/kured/deploys)
 
-This repo houses the assets used to build the Kured project's landing page.
+This repo houses the assets used to build the Kured project's website: <https://kured.dev/>.
 
 ## How to modify this website
 
@@ -17,7 +17,7 @@ In order to run the Kured site locally, you need to install the [Hugo](https://g
 Once you have everything installed, run the site in "server" mode:
 
 ```cli
-hugo server
+make serve
 ```
 
-Navigate to <http://localhost:1313> to see the site running in your browser. As you make updates to the site, the browser will immediately update to reflect those changes.
+Navigate to `http://localhost:1313` to see the site running in your browser. As you make updates to the site, the browser will immediately update to reflect those changes.
