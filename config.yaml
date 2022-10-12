@@ -1,6 +1,11 @@
 baseURL: /
 languageCode: en-gb
 title: Kured
+enableRobotsTXT: true
+enableEmoji: true
+
+# Provide .LastMod values
+enableGitInfo: true
 
 module:
   proxy: direct
@@ -53,3 +58,10 @@ params:
         url: 'https://www.youtube.com/playlist?list=PL7wDX91NpJl_rKYrAtd8zr2XszpexS1eE'
         icon: fab fa-youtube
         desc: View the Kured Dev meeting recordings
+
+menus:
+  main:
+  - url: https://github.com/kubereboot/kured
+    name: Github
+    pre: "<i class='fab fa-github'></i> "
+    weight: 100
