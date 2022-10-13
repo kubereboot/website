@@ -1,19 +1,29 @@
 baseURL: /
-languageCode: en-gb
-title: Kured
+enableRobotsTXT: true
+enableEmoji: true
+# Provide .LastMod values
+enableGitInfo: true
+
+languages:
+  en:
+    title: Kured
+    description: Kured (KUbernetes REboot Daemon) is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS.
+    languageCode: en-gb
 
 module:
   proxy: direct
   imports:
     - path: github.com/google/docsy
     - path: github.com/google/docsy/dependencies
+  mounts:
+    - source: content/en
+      target: content
 
 outputs:
   home: [HTML]
   page: [HTML]
 
 params:
-  description: Kured (KUbernetes REboot Daemon) is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS.
   copyright: The Kured authors
   github_repo: https://github.com/kuberoot/website
   github_branch: main
@@ -53,3 +63,10 @@ params:
         url: 'https://www.youtube.com/playlist?list=PL7wDX91NpJl_rKYrAtd8zr2XszpexS1eE'
         icon: fab fa-youtube
         desc: View the Kured Dev meeting recordings
+
+menus:
+  main:
+  - url: https://github.com/kubereboot/kured
+    name: Github
+    pre: "<i class='fab fa-github'></i> "
+    weight: 100
