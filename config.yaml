@@ -25,7 +25,7 @@ outputs:
 
 params:
   copyright: The Kured authors
-  github_repo: https://github.com/kuberoot/website
+  github_repo: https://github.com/kubereboot/website
   github_branch: main
   github_project_repo: https://github.com/kubereboot/kured
   ui:
