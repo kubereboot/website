@@ -1,3 +1,0 @@
-exemptions:
-  - check: analytics
-    reason: "We don't track people"
