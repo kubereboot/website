@@ -131,8 +131,7 @@ class Repo():
             shutil.copyfile(
                 os.path.join(self.dest, entry[0]),
                 out_file)
-            docs = entry[1].startswith('flux/') or entry[1].startswith('legacy/') or \
-                   entry[1].startswith('flagger/')
+            docs = entry[1].startswith('docs/')
             title = None
             weight = None
             if len(entry) == 4:
