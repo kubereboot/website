@@ -66,6 +66,10 @@ params:
         url: 'https://www.youtube.com/playlist?list=PL7wDX91NpJl_rKYrAtd8zr2XszpexS1eE'
         icon: fa-brands fa-youtube
         desc: View the Kured Dev meeting recordings
+      - name: Mailing list
+        url: 'https://lists.cncf.io/g/cncf-kured-dev'
+        icon: fa-solid fa-envelope
+        desc: Sign up to the Kured mailing list
 
 menus:
   main:
