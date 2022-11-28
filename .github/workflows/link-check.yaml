@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
           # Check all markdown and html files in repo (default)
-          args: --exclude '(\$latest|.local)' --verbose --exclude-link-local --no-progress './content/**' './public/**/*.html'
+          args: --verbose --exclude-link-local --no-progress './content/**' './public/**/*.html'
           # Use json as output format (instead of markdown)
           format: json
           # Use different output file path
