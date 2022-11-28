@@ -1,5 +1,6 @@
 ---
 title: Community
+weight: 10
 ---
 
 ## Getting Help
