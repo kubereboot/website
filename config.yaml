@@ -9,6 +9,11 @@ languages:
     title: Kured
     description: Kured (KUbernetes REboot Daemon) is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS.
     languageCode: en-gb
+    time_format_default: 2006-01-02
+    time_format_blog: 2006-01-02
+
+permalinks:
+  blog: /:section/:year/:month/:slug/
 
 module:
   proxy: direct
@@ -57,6 +62,10 @@ params:
         url: 'https://twitter.com/kubereboot'
         icon: fa-brands fa-twitter
         desc: Follow us on Twitter to get the latest news!
+      - name: RSS Feed
+        url: /blog/index.xml
+        icon: fa fa-rss
+        desc: Subscribe to the RSS feed of our blog!
     developer:
       - name: GitHub
         url: 'https://github.com/kubereboot'
