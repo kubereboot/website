@@ -7,7 +7,7 @@ To obtain a default installation without Prometheus alerting interlock
 or Slack notifications:
 
 ```console
-latest=$(curl -s https://api.github.com/repos/kubereboot/kured/releases | jq -r .[0].tag_name)
+latest=$(curl -s https://api.github.com/repos/kubereboot/kured/releases | jq -r '.[0].tag_name')
 kubectl apply -f "https://github.com/kubereboot/kured/releases/download/$latest/kured-$latest-dockerhub.yaml"
 ```
 
