@@ -31,6 +31,11 @@ outputs:
   home: [HTML]
   page: [HTML]
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   copyright: The Kured authors
   github_repo: https://github.com/kubereboot/website
