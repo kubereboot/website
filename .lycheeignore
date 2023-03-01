@@ -3,3 +3,4 @@ latest
 https://github.com/kubereboot/website/edit/.*
 https://api.github.com/.*
 https://twitter.com/kubereboot
+https://code.jquery.com
