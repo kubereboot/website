@@ -6,9 +6,9 @@ linkTitle: "Kured"
 {{< blocks/cover title="Kured - Kubernetes Reboot Daemon" image_anchor="top" >}}
   <img class="w-25 mb-4" src="img/kured.png" alt="Kured logo" />
   <div class="mx-auto">
-    <a class="btn btn-lg btn-primary" href="{{< relref "/docs" >}}">
+    <a class="btn btn-lg btn-primary me-3 mb-4" href="{{< relref "/docs" >}}">
       Read the documentation
-      <i class="fa-solid fa-circle-right ml-2"></i>
+      <i class="fas fa-arrow-alt-circle-right ms-2"></i>
     </a>
   </div>
 {{< /blocks/cover >}}
@@ -19,22 +19,22 @@ performs safe automatic node reboots when the need to do so is
 indicated by the package management system of the underlying OS.
 {{% /blocks/lead %}}
 
-{{< blocks/section color="light" >}}
+{{< blocks/section color="light" type="row" >}}
 
-{{% blocks/feature icon="fa-search" %}}
+{{% blocks/feature icon="fa-solid fa-magnifying-glass" %}}
 Watches for the presence of a reboot sentinel file e.g. `/var/run/reboot-required`
 or the successful run of a sentinel command.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-lock" %}}
+{{% blocks/feature icon="fa-solid fa-lock" %}}
 Utilises a lock in the API server to ensure only one node reboots at a time.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-user-clock" %}}
+{{% blocks/feature icon="fa-solid fa-user-clock" %}}
 Optionally defers reboots in the presence of active Prometheus alerts or selected pods.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-tasks" %}}
+{{% blocks/feature icon="fa-solid fa-list-check" %}}
 Cordons & drains worker nodes before reboot, uncordoning them after.
 {{% /blocks/feature %}}
 
@@ -54,4 +54,4 @@ Cordons & drains worker nodes before reboot, uncordoning them after.
     </div>
   </div>
 
-  {{< /blocks/section >}}
+{{< /blocks/section >}}
