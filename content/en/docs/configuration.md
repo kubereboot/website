@@ -30,6 +30,7 @@ Flags:
       --message-template-drain string       message template used to notify about a node being drained (default "Draining node %s")
       --message-template-reboot string      message template used to notify about a node being rebooted (default "Rebooting node %s")
       --message-template-uncordon string    message template used to notify about a node being successfully uncordoned (default "Node %s rebooted & uncordoned successfully!")
+      --metrics-port int                    port number where metrics will listen (default 8080)
       --node-id string                      node name kured runs on, should be passed down from spec.nodeName via KURED_NODE_ID environment variable
       --notify-url string                   notify URL for reboot notifications (cannot use with --slack-hook-url flags)
       --period duration                     sentinel check period (default 1h0m0s)
@@ -172,6 +173,8 @@ indicates the presence of the sentinel file:
 # TYPE kured_reboot_required gauge
 kured_reboot_required{node="ip-xxx-xxx-xxx-xxx.ec2.internal"} 0
 ```
+
+Note: Use `--metrics-port` to set a different post where metrics should listen.
 
 The purpose of this metric is to power an alert which will summon an
 operator if the cluster cannot reboot itself automatically for a
