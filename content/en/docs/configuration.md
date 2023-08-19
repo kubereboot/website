@@ -13,6 +13,7 @@ Usage:
 
 Flags:
       --alert-filter-regexp regexp.Regexp   alert names to ignore when checking for active alerts
+      --alert-filter-match-only             Only block if the alert-filter-regexp matches active alerts
       --alert-firing-only                   only consider firing alerts when checking for active alerts
       --annotate-nodes                      if set, the annotations 'weave.works/kured-reboot-in-progress' and 'weave.works/kured-most-recent-reboot-needed' will be given to nodes undergoing kured reboots
       --blocking-pod-selector stringArray   label selector identifying pods whose presence should prevent reboots
@@ -51,6 +52,7 @@ Flags:
       --slack-username string               slack username for reboot notifications (default "kured")
       --start-time string                   schedule reboot only after this time of day (default "0:00")
       --time-zone string                    use this timezone for schedule inputs (default "UTC")
+      --concurrency number                  amount of nodes to concurrently reboot. (default 1)
 ```
 
 ## Reboot Sentinel File & Period
@@ -122,6 +124,12 @@ You can also only block reboots for firing alerts:
 
 ```console
 --alert-firing-only=true
+```
+
+When inverting the matching-logic, only matching alerts can block a reboot:
+
+```console
+--alert-filter-match-only=true
 ```
 
 See the section on Prometheus metrics for an important application of this
@@ -247,3 +255,12 @@ the daemonset YAML provided in the repository.
 Similarly `--lock-annotation` can be used to change the name of the
 annotation kured will use to store the lock, but the default is almost
 certainly safe.
+
+## Concurrent reboots
+
+> Note: Concurrent reboots are not save for production environments as
+> there are no safeguards related to workloads on simultaneously rebooted nodes.
+
+The `--concurrency` argument can be configured to reboot multiple nodes at once.
+E.g. with `--concurrency=3` it would be allowed to reboot three nodes concurrently on max.
+This is useful for development clusters where interruptions of workloads are okay.
