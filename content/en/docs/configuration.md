@@ -13,10 +13,12 @@ Usage:
 
 Flags:
       --alert-filter-regexp regexp.Regexp   alert names to ignore when checking for active alerts
+      --alert-filter-match-only             Only block if the alert-filter-regexp matches active alerts
       --alert-firing-only                   only consider firing alerts when checking for active alerts
       --annotate-nodes                      if set, the annotations 'weave.works/kured-reboot-in-progress' and 'weave.works/kured-most-recent-reboot-needed' will be given to nodes undergoing kured reboots
       --blocking-pod-selector stringArray   label selector identifying pods whose presence should prevent reboots
       --drain-grace-period int              time in seconds given to each pod to terminate gracefully, if negative, the default value specified in the pod will be used (default -1)
+      --drain-pod-selector string           only drain pods with labels matching the selector (default: '', all pods)
       --drain-timeout duration              timeout after which the drain is aborted (default: 0, infinite time)
       --ds-name string                      name of daemonset on which to place lock (default "kured")
       --ds-namespace string                 namespace containing daemonset on which to place lock (default "kube-system")
@@ -30,6 +32,7 @@ Flags:
       --message-template-drain string       message template used to notify about a node being drained (default "Draining node %s")
       --message-template-reboot string      message template used to notify about a node being rebooted (default "Rebooting node %s")
       --message-template-uncordon string    message template used to notify about a node being successfully uncordoned (default "Node %s rebooted & uncordoned successfully!")
+      --metrics-host string                 host where metrics will listen (default "")
       --metrics-port int                    port number where metrics will listen (default 8080)
       --node-id string                      node name kured runs on, should be passed down from spec.nodeName via KURED_NODE_ID environment variable
       --notify-url string                   notify URL for reboot notifications (cannot use with --slack-hook-url flags)
@@ -49,6 +52,7 @@ Flags:
       --slack-username string               slack username for reboot notifications (default "kured")
       --start-time string                   schedule reboot only after this time of day (default "0:00")
       --time-zone string                    use this timezone for schedule inputs (default "UTC")
+      --concurrency number                  amount of nodes to concurrently reboot. (default 1)
 ```
 
 ## Reboot Sentinel File & Period
@@ -122,6 +126,12 @@ You can also only block reboots for firing alerts:
 --alert-firing-only=true
 ```
 
+When inverting the matching-logic, only matching alerts can block a reboot:
+
+```console
+--alert-filter-match-only=true
+```
+
 See the section on Prometheus metrics for an important application of this
 filter.
 
@@ -174,7 +184,10 @@ indicates the presence of the sentinel file:
 kured_reboot_required{node="ip-xxx-xxx-xxx-xxx.ec2.internal"} 0
 ```
 
-Note: Use `--metrics-port` to set a different post where metrics should listen.
+Note: Use `--metrics-host` and/or `--metrics-port` to set a different address
+where metrics should listen. The values of these flags will be put together
+like "<host>:<port>" to define a complete listen address for the metrics
+server.
 
 The purpose of this metric is to power an alert which will summon an
 operator if the cluster cannot reboot itself automatically for a
@@ -242,3 +255,12 @@ the daemonset YAML provided in the repository.
 Similarly `--lock-annotation` can be used to change the name of the
 annotation kured will use to store the lock, but the default is almost
 certainly safe.
+
+## Concurrent reboots
+
+> Note: Concurrent reboots are not save for production environments as
+> there are no safeguards related to workloads on simultaneously rebooted nodes.
+
+The `--concurrency` argument can be configured to reboot multiple nodes at once.
+E.g. with `--concurrency=3` it would be allowed to reboot three nodes concurrently on max.
+This is useful for development clusters where interruptions of workloads are okay.
