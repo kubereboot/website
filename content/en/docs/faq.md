@@ -76,7 +76,7 @@ tolerations:
         effect: NoSchedule
 ```
 
-In the docs about [taint and toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) you an read up about the conecpt.
+In the docs about [taint and toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) you an read up about the concept.
 
 In Order to tollerate kured on the tainted nodes change this section into:
 
