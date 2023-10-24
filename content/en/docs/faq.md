@@ -13,7 +13,41 @@ versioned manifest from the [release page](https://github.com/kubereboot/kured/r
 
 ## Make kured run on control-plane with taint
 
-In a cluster setup your control-plane might have the following taint:
+In a cluster setup your control-plane might have taints that block the kured deployment.
+
+To get the taints of your cluster node you can run the following commands:
+
+```bash
+kubectl get nodes ${NODENAME} -o json | jq .spec.taints
+```
+
+Alternativly you can also use VS Code to read the whole yaml (or json):
+
+```bash
+kubectl get nodes ${NODENAME} -o yaml | code -
+```
+
+or use the [describe](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#describe) command:
+
+```bash
+kubectl describe nodes ${NODENAME}
+```
+
+In this example the control-plane nodes have the following taint:
+
+JSON:
+
+```json
+[
+  {
+    "effect": "NoExecute",
+    "key": "CriticalAddonsOnly",
+    "value": "true"
+  }
+]
+```
+
+YAML:
 
 ```yaml
 taints:
@@ -42,7 +76,9 @@ tolerations:
         effect: NoSchedule
 ```
 
-In Order to make kured on the tainted nodes change this section into:
+In the docs about [taint and toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) you an read up about the conecpt.
+
+In Order to tollerate kured on the tainted nodes change this section into:
 
 ```yaml
 tolerations:
