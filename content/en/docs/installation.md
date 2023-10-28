@@ -3,6 +3,8 @@ title: Installation
 weight: 1
 ---
 
+## Default Installation With Manifests
+
 To obtain a default installation without Prometheus alerting interlock
 or Slack notifications:
 
@@ -13,6 +15,10 @@ kubectl apply -f "https://github.com/kubereboot/kured/releases/download/$latest/
 
 If you want to customise the installation, download the manifest and
 edit it in accordance with the following section before application.
+
+## Using The Helm-Chart
+
+Kured also provides its own helm-chart. Detailed instructions and documentation can be found [here](https://github.com/kubereboot/charts/tree/main/charts/kured).
 
 ## Kubernetes & OS Compatibility
 
