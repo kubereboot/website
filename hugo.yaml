@@ -20,7 +20,6 @@ module:
   proxy: direct
   imports:
     - path: github.com/google/docsy
-    - path: github.com/google/docsy/dependencies
   mounts:
     - source: content/en
       target: content
