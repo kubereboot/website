@@ -17,6 +17,7 @@ Flags:
       --alert-firing-only                   only consider firing alerts when checking for active alerts
       --annotate-nodes                      if set, the annotations 'weave.works/kured-reboot-in-progress' and 'weave.works/kured-most-recent-reboot-needed' will be given to nodes undergoing kured reboots
       --blocking-pod-selector stringArray   label selector identifying pods whose presence should prevent reboots
+      --drain-delay duration                delay drain for this duration (default: 0, disabled)
       --drain-grace-period int              time in seconds given to each pod to terminate gracefully, if negative, the default value specified in the pod will be used (default -1)
       --drain-pod-selector string           only drain pods with labels matching the selector (default: '', all pods)
       --drain-timeout duration              timeout after which the drain is aborted (default: 0, infinite time)
