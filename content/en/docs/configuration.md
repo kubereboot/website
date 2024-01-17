@@ -45,6 +45,8 @@ Flags:
       --reboot-command string               command to run when a reboot is required (default "/bin/systemctl reboot")
       --reboot-days strings                 schedule reboot on these days (default [su,mo,tu,we,th,fr,sa])
       --reboot-delay duration               delay reboot for this duration (default: 0, disabled)
+      --reboot-method                       method to use for reboots (default command), available: command, signal
+      --reboot-signal                       signal to use for reboots (default 39 = SIGRTMIN+5).
       --reboot-sentinel string              path to file whose existence triggers the reboot command (default "/var/run/reboot-required")
       --reboot-sentinel-command string      command for which a zero return code will trigger a reboot command
       --skip-wait-for-delete-timeout int    when seconds is greater than zero, skip waiting for the pods whose deletion timestamp is older than N seconds while draining a node
