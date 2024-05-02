@@ -52,6 +52,7 @@ params:
     footer_about_enable: true
     readingtime:
       enable: false
+    showLightDarkModeMenu: true
   links:
     user:
       - name: Slack
