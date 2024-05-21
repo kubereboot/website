@@ -80,6 +80,8 @@ params:
         url: 'https://lists.cncf.io/g/cncf-kured-dev'
         icon: fa-solid fa-envelope
         desc: Sign up to the Kured mailing list
+  social:
+    twitter: kubereboot
 
 menus:
   main:

@@ -51,9 +51,9 @@ YAML:
 
 ```yaml
 taints:
-  - effect: NoExecute
-    key: CriticalAddonsOnly
-    value: "true"
+- effect: NoExecute
+  key: CriticalAddonsOnly
+  value: "true"
 ```
 
 In order to make kured run on these nodes as well we will need to edit the daemonset of the deployment.
@@ -70,10 +70,10 @@ In the `kured-1.14.0-dockerhub.yaml` the daemonset has the following tolerations
 
 ```yaml
 tolerations:
-    - key: node-role.kubernetes.io/control-plane
-        effect: NoSchedule
-    - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+- key: node-role.kubernetes.io/control-plane
+    effect: NoSchedule
+- key: node-role.kubernetes.io/master
+    effect: NoSchedule
 ```
 
 In the docs about [taint and toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) you an read up about the concept.
@@ -82,8 +82,8 @@ In Order to tollerate kured on the tainted nodes change this section into:
 
 ```yaml
 tolerations:
-    - key: CriticalAddonsOnly
-        operator: Exists
+- key: CriticalAddonsOnly
+    operator: Exists
 ```
 
 after applying the `kured-1.14.0-dockerhub.yaml` file you can check the number of pods with:
