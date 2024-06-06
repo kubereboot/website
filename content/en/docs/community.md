@@ -77,7 +77,7 @@ Agenda/Notes:
     - We bookmarked https://github.com/kubereboot as our new GitHub organisation. Are we good with that name? (kured is already taken.)
 - 1.11.0 release to go with k8s 1.25.0
 
-### 2022-08-03 (cancel)
+### 2022-08-03 (cancelled)
 
 Cancelled due to lack of participation.
 
@@ -200,8 +200,9 @@ Agenda/Notes:
       - Daniel to write a pull request template (explain to add new arguments to manifest, helm chart, docs, etc)
 
 
-### 2021-07-28 (cancel)
-Cancelled.
+### 2021-07-28 (cancelled)
+
+Cancelled due to lack of participation.
 
 ### 2021-05-26 16:00 UTC
 
@@ -304,9 +305,13 @@ Agenda/Notes:
       - https://github.com/weaveworks/ui-components/commits/master e.g. uses conventionalcommits javascript logic.
 
 
-### 2021-01-27 (cancel)
+### 2021-01-27 (cancelled)
 
-### 2020-12-23 (cancel)
+Cancelled due to lack of participation.
+
+### 2020-12-23 (cancelled)
+
+Cancelled due to lack of participation.
 
 ### 2020-11-25 16:00 UTC
 
@@ -377,7 +382,9 @@ Agenda/Notes:
   - Review of actions from last meeting
       - ✅ [evrardjp]: ACTION: go through issue list again and mark issues as low-hanging-fruit
 
-### 2020-08-26 16:00 UTC (cancel)
+### 2020-08-26 16:00 UTC (cancelled)
+
+Cancelled due to lack of participation.
 
 ### 2020-07-22 16:00 UTC
 
