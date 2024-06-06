@@ -36,14 +36,14 @@ Agenda/Notes:
 - Introductions - anyone new to the call?
 - Daniel: fix calendar
 - Review actions from the last meeting:
-  - Governance: Daniel to publish https://github.com/kubereboot/kured/compare/main...add-governance - we iterate over it together.
+  - Governance: Daniel to push branch add-governance, targetting main tree to iterate it together.
   - ACTION: Jack to review if we can make use of testgrid.k8s.io somehow 
 - 1.11.0 release:
   - Decide to release now. https://artifacthub.io/packages/helm/kured/kured?modal=security-report shows security issues which would be fixed this way.
   - [Bring back tests](https://github.com/kubereboot/kured/issues/647) later on.
   - ACTION: Christian to publish release.
 - Sandbox announcement:
-  - ACTION: Daniel to write [Kured Sandbox Announcement](https://docs.google.com/document/d/1iMxqr48hRns_Fj5QKVRkm18nCuwI9_aciR4al9HDhVg/edit)
+  - ACTION: Daniel to write Kured Sandbox Announcement
 
 ### 2022-10-05 16:00 UTC
 
@@ -64,7 +64,8 @@ Agenda/Notes:
   - ACTION: Jack to review if we can make use of testgrid.k8s.io somehow 
 - Figure out if we move to a rhythm of meetings every two weeks, to be able to invite new contributors better.
 - Kured 1.11.0 release: https://github.com/kubereboot/kured/milestone/12
-- Announcement: [Kured Sandbox Announcement](https://docs.google.com/document/d/1iMxqr48hRns_Fj5QKVRkm18nCuwI9_aciR4al9HDhVg/edit)
+- Sandbox announcement:
+  - ACTION: Daniel to write Kured Sandbox Announcement
 
 ### 2022-09-14 16:00 UTC
 
@@ -111,7 +112,7 @@ Agenda/Notes:
 
 ### 2021-12-01 16:00 UTC
 
-[Link to Recording](https://youtu.be/lT2CKKGOJe0)
+Link to Recording lost.
 
 Attendees:
   - Daniel Holbach
@@ -457,7 +458,6 @@ Agenda/Notes:
   - [evrardjp] Automated testing using KinD
       - Following up from last meeting: we have bash script that does a complete run: https://github.com/weaveworks/kured/pull/141
       - Daniel took a look at what Flux uses: GH Actions, KinD and bats.
-        - https://github.com/dholbach/kured/blob/kind-gh-action/.github/workflows/e2e-tests.yaml gives you https://github.com/dholbach/kured/runs/667491858?check_suite_focus=true
         - this is what e.g. a bats test can look like: https://github.com/fluxcd/flux/blob/master/test/e2e/11_fluxctl_install.bats
         - feedback from the Flux team was: in CircleCI e2e tests would flake a lot - that's gone with moving to GH Actions
       - ACTION: evrardjp to refresh the PR and try to cleanup with the gh actions/kind + bats
