@@ -26,9 +26,9 @@ Meetings are currently on hold.
 
 Link to Recording … not available. We forgot to record!
 
-Attending:
-- Daniel
-- Christian
+Attendees:
+- Christian Kotzbauer
+- Daniel Holbach
 
 Agenda/Notes:
 - Introductions - anyone new to the call?
@@ -47,7 +47,7 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/JapNYUTesIU)
 
-Attending:
+Attendees:
 - Daniel Holbach
 - Jack Francis
 - Jean-Philippe Evrard
@@ -68,7 +68,7 @@ Agenda/Notes:
 
 This was an async meeting on Slack instead.
 
-Attending:
+Attendees:
 
 Agenda/Notes:
 - Introductions
@@ -85,11 +85,11 @@ Cancelled due to lack of participation.
 
 [Link to Recording](https://youtu.be/rurjb9J5INU)
 
-Attending:
+Attendees:
+  - Alexei Tighineanu
   - Daniel Holbach
   - Jack Francis
   - Jean-Philippe Evrard
-  - Alexei Tighineanu
 
 Agenda/Notes:
   - Short Kured Demo (related to https://github.com/weaveworks/kured/issues/359)
@@ -111,7 +111,7 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/lT2CKKGOJe0)
 
-Attending:
+Attendees:
   - Daniel Holbach
   - Jack Francis
   - Jean-Philippe Evrard
@@ -143,10 +143,10 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/fkoDxkb9JmY)
 
-Attending:
-  - Christian
-  - Jack
-  - Daniel
+Attendees:
+  - Christian Kotzbauer
+  - Daniel Holbach
+  - Jack Francis
 
 Agenda/Notes:
   - Introductions
@@ -159,12 +159,12 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/k7Ipxe0FE0A)
 
-Attending:
-  - Jack Francis
-  - Christian Kotzbauer
-  - Jean-Philippe Evrard
-  - Daniel Holbach
+Attendees:
   - Art
+  - Christian Kotzbauer
+  - Daniel Holbach
+  - Jack Francis
+  - Jean-Philippe Evrard
 
 Agenda/Notes:
   - Introductions
@@ -183,8 +183,10 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/EVRD0g4yBTo)
 
-Attending:
-  - Christian, Jean-Phillipe, Daniel
+Attendees:
+  - Christian Kotzbauer
+  - Daniel Holbach
+  - Jean-Philippe Evrard
 
 Agenda/Notes:
   - Introductions
@@ -205,12 +207,12 @@ Cancelled.
 
 [Link to Recording](https://youtu.be/oXBoCIRxy0s)
 
-Attending:
-  - Jack Francis (Microsoft)
-  - Daniel Holbach (Weaveworks)
+Attendees:
+  - Alexei Tighineanu
+  - Daniel Holbach
+  - Jack Francis
+  - Jean-Philippe Evrard
   - Jonathan McCracken
-  - Alexei Tighineanu (SUSE)
-  - JP Evrard (SUSE)
 
 Agenda/Notes:
   - Introductions
@@ -240,10 +242,11 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/o22fIlFebyo)
 
-Attending:
-  - Alexei + Jean Phillipe, SUSE
-  - Jack, Microsoft
-  - Daniel, Weaveworks
+Attendees:
+  - Alexei Tighineanu
+  - Daniel Holbach
+  - Jack Francis
+  - Jean-Philippe Evrard
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -263,10 +266,10 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/Yhz3XDzkOn8)
 
-Attending :
-  - Ckotzbauer
-  - Evrardjp
-  - Dholbach
+Attendees :
+  - Christian Kotzbauer
+  - Daniel Holbach
+  - Jean-Philippe Evrard
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -309,10 +312,11 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/u8WdDZ7eOeY)
 
-Attending:
-  - Evrardjp, atighineanu - SUSE
-  - Daniel - Weaveworks
-  - Christian K
+Attendees:
+  - Alexei Tighineanu
+  - Christian Kotzbauer
+  - Daniel Holbach
+  - Jean-Philippe Evrard
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -336,9 +340,9 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/CaUbpjMvGL0)
 
-Attending:
-  - Jean-Philippe Evrard, SUSE
-  - Daniel Holbach, Weaveworks
+Attendees:
+  - Jean-Philippe Evrard
+  - Daniel Holbach
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -379,8 +383,8 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/c6Jg_DLzoaY)
 
-Attending:
-  - Daniel Holbach - Weaveworks
+Attendees:
+  - Daniel Holbach
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -395,7 +399,9 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/eIupOBAC32I)
 
-Attending:
+Attendees:
+  - Christian Kotzbauer
+  - Daniel Holbach
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -420,11 +426,11 @@ Agenda/Notes:
 
 [Link to Recording](https://youtu.be/j332xy0J1KQ)
 
-Attending:
-  - evrardjp
-  - dholbach
-  - ckotzbauer
-  - michalschott
+Attendees:
+  - Christian Kotzbauer
+  - Daniel Holbach
+  - Jean-Philippe Evrard
+  - Michał Schott
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -454,16 +460,13 @@ Agenda/Notes:
       - [evrardjp]: ACTION: go through issue list again and mark issues as low-hanging-fruit
       - ACTION: Daniel to reach out more broadly for the next meeting.
 
-
-
-
 ### 2020-04-22 16:00 UTC
 
 [Link to Recording](https://youtu.be/pa6BDr2HzfM)
 
-Attending:
-  - evrardjp 
-  - dholbach
+Attendees:
+  - Daniel Holbach
+  - Jean-Philippe Evrard
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -505,12 +508,13 @@ Agenda/Notes:
 ### 2020-03-25 16:00 UTC
 [Link to Recording](https://youtu.be/Xc-tkNb6zNk)
 
-Attending:
-  - Adam Harrison, Daniel Holbach - Weaveworks
+Attendees:
   - Ace Edlib
-  - Rita Zhang
+  - Adam Harrison
   - Craig Peters
-  - JP Evrard
+  - Daniel Holbach
+  - Jean-Philippe Evrard
+  - Rita Zhang
 
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
@@ -542,4 +546,3 @@ Agenda/Notes:
       - ACTION: Daniel to set up monthly meetings for now.
       - ACTION: Daniel to reach out to Helm chart authors and invite them to the next meeting.
   - Reminder: we also hang out in #kured on [Weave Slack](https://slack.weave.works/).
-
