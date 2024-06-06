@@ -18,7 +18,9 @@ Your feedback is always welcome!
 
 ## Next Meeting
 
-Meetings are currently on hold.
+Meetings are currently on hold, as we do not need synchronous meetings at the moment.
+
+If you need to call for a synchronous meeting, do not hesitate to ask for it on slack.
 
 ## Past Meetings
 
