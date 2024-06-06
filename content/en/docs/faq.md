@@ -91,3 +91,7 @@ after applying the `kured-1.14.0-dockerhub.yaml` file you can check the number o
 ```bash
 kubectl -n kube-system get daemonsets/kured
 ```
+
+## How do you pronounce `kured`?
+
+You can pronounce it as `cure dee`(IPA: /kjʊəɹdiː/). The D comes from 'daemon', akin to 'systemd'
