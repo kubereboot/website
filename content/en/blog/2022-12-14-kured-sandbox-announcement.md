@@ -10,7 +10,7 @@ tags: [announcement]
 ## If you are new to Kured
 
 <div class="w-25 pr-5">
-  <img class="img-fluid float-left" src="/img/kured.png" />
+  <img class="img-fluid float-left" src="/img/kured.png" alt="Kured logo" />
 </div>
 
 Kured is the Kubernetes Reboot Daemon - it helps perform safe automatic
