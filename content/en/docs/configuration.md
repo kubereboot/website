@@ -189,7 +189,7 @@ kured_reboot_required{node="ip-xxx-xxx-xxx-xxx.ec2.internal"} 0
 
 Note: Use `--metrics-host` and/or `--metrics-port` to set a different address
 where metrics should listen. The values of these flags will be put together
-like "<host>:<port>" to define a complete listen address for the metrics
+like `<host>:<port>` to define a complete listen address for the metrics
 server.
 
 The purpose of this metric is to power an alert which will summon an
