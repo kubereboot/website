@@ -4,6 +4,7 @@ weight: 1
 ---
 
 ## Default installation with manifests
+
 To obtain a default installation without Prometheus alerting interlock
 or Slack notifications:
 
@@ -18,7 +19,6 @@ edit it in accordance with the following section before application.
 ## Using the Helm-Chart
 
 Kured also provides its own helm-chart. Detailed instructions and documentation can be found [here](https://github.com/kubereboot/charts/tree/main/charts/kured).
-
 
 ## Kubernetes & OS Compatibility
 
