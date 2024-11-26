@@ -67,6 +67,10 @@ params:
         url: /blog/index.xml
         icon: fa fa-rss
         desc: Subscribe to the RSS feed of our blog!
+      - name: Bluesky
+        url: 'https://bsky.app/profile/kured.dev'
+        icon: fa-brands fa-bluesky
+        desc: Follow us on Bluesky to get the latest news!
     developer:
       - name: GitHub
         url: 'https://github.com/kubereboot'
