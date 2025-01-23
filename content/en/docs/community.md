@@ -602,4 +602,4 @@ Agenda/Notes:
   - Next meeting time
       - ACTION: Daniel to set up monthly meetings for now.
       - ACTION: Daniel to reach out to Helm chart authors and invite them to the next meeting.
-  - Reminder: we also hang out in #kured on [Weave Slack](https://slack.weave.works/).
+  - ~~Reminder: we also hang out in #kured on Weave Slack.~~
