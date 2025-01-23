@@ -57,7 +57,8 @@ Among many other things, we
   (we are up to 89% completion already!) and claimed our
   [ArtifactHub](https://artifacthub.io/packages/helm/kured/kured)
   entry as well
-- created a [Twitter account](https://twitter.com/kubereboot) and a
+- created a ~~Twitter account~~
+  [Bluesky account](https://bsky.app/profile/kured.dev) and a
   [mailing list](https://lists.cncf.io/g/cncf-kured-dev) and
 - moved all of our other infrastructure over to CNCF resources, e.g.
   [our Slack channel](https://cloud-native.slack.com/archives/kured)
@@ -80,9 +81,11 @@ We would love your involvement and support! Here are your first steps to
 get involved:
 
 - Join us in \#kured on [CNCF Slack](https://slack.cncf.io)
-- [Follow us on Twitter](https://twitter.com/kubereboot)
+- [Follow us on Bluesky](https://bsky.app/profile/kured.dev)
 - Give us [a star on GitHub](https://github.com/kubereboot/kured)
 - Please give us feedback
 - And [get involved in Kured](/docs/development/) as a contributor
 
 We are looking forward to you joining us!
+
+**Update (2025-01-23):** We moved to Bluesky.

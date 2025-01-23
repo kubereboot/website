@@ -59,10 +59,6 @@ params:
         url: 'https://cloud-native.slack.com/archives/kured'
         icon: fa-brands fa-slack
         desc: Chat with other project developers
-      - name: Twitter
-        url: 'https://twitter.com/kubereboot'
-        icon: fa-brands fa-twitter
-        desc: Follow us on Twitter to get the latest news!
       - name: RSS Feed
         url: /blog/index.xml
         icon: fa fa-rss
