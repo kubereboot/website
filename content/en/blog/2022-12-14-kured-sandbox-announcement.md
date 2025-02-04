@@ -15,14 +15,12 @@ tags: [announcement]
 
 Kured is the Kubernetes Reboot Daemon - it helps perform safe automatic
 node reboots, when indicated by the package management of the underlying
-OS. It was [first announced in November
-2017](https://www.weave.works/blog/announcing-kured-a-kubernetes-reboot-daemon)
+OS. It was first announced in November 2017[^1]
 as a project to facilitate safe reboots across the cluster, which
 accelerates the rollout of critical OS security fixes to Kubernetes
 clusters. Automation makes everything better indeed.
 
-Since 2020 a small team of contributors [has taken over
-development](https://www.weave.works/blog/one-year-kured-kubernetes-reboot-daemon)
+Since 2020 a small team of contributors has taken over development[^2]
 from Adam Harrison, its original creator. Kured regularly publishes
 [new minor version releases](/docs/installation/) to coincide
 with new minor version releases of Kubernetes.
@@ -57,7 +55,8 @@ Among many other things, we
   (we are up to 89% completion already!) and claimed our
   [ArtifactHub](https://artifacthub.io/packages/helm/kured/kured)
   entry as well
-- created a [Twitter account](https://twitter.com/kubereboot) and a
+- created a ~~Twitter account~~
+  [Bluesky account](https://bsky.app/profile/kured.dev) and a
   [mailing list](https://lists.cncf.io/g/cncf-kured-dev) and
 - moved all of our other infrastructure over to CNCF resources, e.g.
   [our Slack channel](https://cloud-native.slack.com/archives/kured)
@@ -80,9 +79,14 @@ We would love your involvement and support! Here are your first steps to
 get involved:
 
 - Join us in \#kured on [CNCF Slack](https://slack.cncf.io)
-- [Follow us on Twitter](https://twitter.com/kubereboot)
+- [Follow us on Bluesky](https://bsky.app/profile/kured.dev)
 - Give us [a star on GitHub](https://github.com/kubereboot/kured)
 - Please give us feedback
 - And [get involved in Kured](/docs/development/) as a contributor
 
 We are looking forward to you joining us!
+
+**Update (2025-01-23):** We moved to Bluesky.
+
+[^1]: <https://web.archive.org/web/20250000000000*/https://www.weave.works/blog/announcing-kured-a-kubernetes-reboot-daemon>
+[^2]: <https://web.archive.org/web/20250000000000*/https://www.weave.works/blog/one-year-kured-kubernetes-reboot-daemon>

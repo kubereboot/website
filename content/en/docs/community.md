@@ -143,7 +143,7 @@ Attendees:
   - Jean-Philippe Evrard
 
 Agenda/Notes:
-  - Short Kured Demo (related to https://github.com/weaveworks/kured/issues/359)
+  - Short Kured Demo (related to https://github.com/kubereboot/kured/issues/359)
       - We should get more input. This would change the way Kured works.
       - This would improve security. 
       - Current UX: “agent that runs on node, does reboots on behalf of OS”.
@@ -172,10 +172,10 @@ Agenda/Notes:
   - Introductions
   - Review of actions from last meeting
   - Users being rate-limited: 
-      - Jack to file an issue for us to link users to resources for local caching of images: https://github.com/weaveworks/kured/issues/471
+      - Jack to file an issue for us to link users to resources for local caching of images: https://github.com/kubereboot/kured/issues/471
       - Daniel to see if Kured could be part of DockerHub OSS Programme
-  - Window Support: https://github.com/weaveworks/kured/issues/458
-      - PoC up in https://github.com/weaveworks/kured/pull/460
+  - Window Support: https://github.com/kubereboot/kured/issues/458
+      - PoC up in https://github.com/kubereboot/kured/pull/460
       - Technically this hasn’t been possible up until recently. K8s only has support for this since 1.22 (WindowsHostProcessContainers). 
       - Will require bigger changes to how images are built. GH Actions should be fine.
       - Mark walked us through the PR.
@@ -203,7 +203,7 @@ Agenda/Notes:
   - Introductions
   - Review of actions from last meeting
   - Quay.io: Daniel to talk to Weave IT folks to see if we have heard back from Quay/RH.
-  - Tighten permissions (security best practices) · Issue #451 · weaveworks/kured
+  - Tighten permissions (security best practices) · Issue #451 · kubereboot/kured
       - Assigned to jackfrancis, will do some repro tests of varying security modifications
 
 ### 2021-09-27 16:00 UTC
@@ -221,13 +221,13 @@ Agenda/Notes:
   - Introductions
   - Review of actions from last meeting
   - 1.8.0 release!
-      - Review of https://github.com/weaveworks/kured/pull/428
+      - Review of https://github.com/kubereboot/kured/pull/428
       - Jack and Jean-Philippe will have some time to review the situation.
       - Theoretically this could be easy to solve.
       - There’s also 0.21.5 of the libraries, so maybe let’s update to these as well.
       - Daniel to do additional testing before release
       - Daniel to write release announcement
-  - Use of context.TODO() · Issue #234 · weaveworks/kured: probably unrelated.
+  - Use of context.TODO() · Issue #234 · kubereboot/kured: probably unrelated.
 
 
 ### 2021-08-25 16:00 UTC
@@ -247,7 +247,7 @@ Agenda/Notes:
           - JP to review 419
           - JP: 418 can be merged - needs to be added to helm chart (423)
           - CK: 415 to be merged after 1.8.0
-      - All open issues can be found here: https://github.com/weaveworks/kured/milestone/7
+      - All open issues can be found here: https://github.com/kubereboot/kured/milestone/7
       - Daniel to write a pull request template (explain to add new arguments to manifest, helm chart, docs, etc)
 
 
@@ -276,14 +276,14 @@ Agenda/Notes:
   - Alexei: interested in breaking up some of the bigger functions.
       - Alexei to PM this work, Jack happy to contribute.
       - Drain/reboot functions: notifications can be moved out of these.
-      - https://github.com/weaveworks/kured/pull/368 can be reviewed.
+      - https://github.com/kubereboot/kured/pull/368 can be reviewed.
   - Jack: What are the big things we want to land in the next release cycle?
       - Maybe make kured less privileged?
-      - Maybe more of the [flexible-reboot-command](https://github.com/weaveworks/kured/issues?q=label%3Aflexible-reboot-command) story?
+      - Maybe more of the [flexible-reboot-command](https://github.com/kubereboot/kured/issues?q=label%3Aflexible-reboot-command) story?
           ▪ Maybe improve documentation? 
       - Side-point: some old feature requests might have been closed through the “stale” GH Action.
           ▪ Do we need to disable this?
-      - Architecture support: https://github.com/weaveworks/kured/issues/23?
+      - Architecture support: https://github.com/kubereboot/kured/issues/23?
           ▪ Maybe we can learn from what Flux is doing?
   - Jonathan: support for Amazon Linux?
       - JP says “reboot-command” option.
@@ -304,14 +304,14 @@ Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
   - Review of action items from last meeting.
   - Release 1.7.0 - still to be done
-     - Prometheus updates: https://github.com/weaveworks/kured/pull/367 - Daniel happy to test in WW Dev.
-     - Tests update: https://github.com/weaveworks/kured/pull/348 - Jack wants to review.
-     - 1.21 testing in CI: https://github.com/weaveworks/kured/pull/349
+     - Prometheus updates: https://github.com/kubereboot/kured/pull/367 - Daniel happy to test in WW Dev.
+     - Tests update: https://github.com/kubereboot/kured/pull/348 - Jack wants to review.
+     - 1.21 testing in CI: https://github.com/kubereboot/kured/pull/349
          - Blocked on https://github.com/kubernetes-sigs/kind/issues/2188 
   - Alexei wants to put some work into making kured code more unit-testable.
   - Alexei wants to remove the current slack package.
   - Daniel to finish kured blog post once we’re more confident in 1.7.0 release.
-  - JP has ideas on how kured could be re-architected. Making it more configurable through CRDs, etc. A bit concerned about how much time it’d take to implement though. Also: We like kured the way it is now, so we don’t want a re-architecture to be intrusive for the community: We are thinking of alternative projects or branches. See also: https://github.com/weaveworks/kured/issues/359 
+  - JP has ideas on how kured could be re-architected. Making it more configurable through CRDs, etc. A bit concerned about how much time it’d take to implement though. Also: We like kured the way it is now, so we don’t want a re-architecture to be intrusive for the community: We are thinking of alternative projects or branches. See also: https://github.com/kubereboot/kured/issues/359 
   - Food for thought: "latest kured" on all the k8s releases.
 
 ### 2021-03-24 16:00 UTC
@@ -331,7 +331,7 @@ Agenda/Notes:
       - Integration tests for this would be great. Actually test on k8s.
       - Showing metrics right, will reboots be blocked, etc.
       - Proposal bot updates prometheus deps, but we can’t update easily.
-      - https://github.com/weaveworks/kured/issues/243
+      - https://github.com/kubereboot/kured/issues/243
       - If you are interested in fixing this, please pair with JP!
       - Another idea: mock tests: Record messages sent to prometheus and compare expected vs. observed.
       - Please note down the steps to test manually, so Daniel can test in WW Dev cluster.
@@ -341,7 +341,7 @@ Agenda/Notes:
       - Timeline TBD
       - [Release of Kubernetes 1.21 is April 8th](https://www.kubernetes.dev/resources/release/)
       - Aim for kured release 15th April? MAybe align blog post with 1.7.0 release.
-  - Review of next release progress: https://github.com/weaveworks/kured/milestone/6
+  - Review of next release progress: https://github.com/kubereboot/kured/milestone/6
       - 297: flexible reboot command
           - Merged
       - JP to contact other flexible-reboot-command PR authors to check/review 297.
@@ -377,11 +377,11 @@ Attendees:
 Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
   - Review of actions from last meeting
-      - https://github.com/weaveworks/kured/pull/178 still needs to be reviewed, also needs rebasing.
+      - https://github.com/kubereboot/kured/pull/178 still needs to be reviewed, also needs rebasing.
       - Daniel to file meta issue about reboot approaches
-  - Christian found that https://github.com/weaveworks/kured/pull/230 will need a follow-up.
+  - Christian found that https://github.com/kubereboot/kured/pull/230 will need a follow-up.
       - ACTION: Daniel to file an issue for this.
-  - Review of testing PRs: https://github.com/weaveworks/kured/pulls?q=is%3Apr+is%3Aopen+label%3Atesting
+  - Review of testing PRs: https://github.com/kubereboot/kured/pulls?q=is%3Apr+is%3Aopen+label%3Atesting
       - Generally looking good. Reviewed as a group, only little bits of feedback for now. 181, 183, 184 can be merged very soon.
   - More 1.6.0 planning:
       - K8s 1.20 release in 2 weeks.
@@ -466,7 +466,7 @@ Agenda/Notes:
   - Review of actions from last meeting
       - ACTION: Daniel to comment on JP’s kind testing PR
       - [evrardjp]: ACTION: go through issue list again and mark issues as low-hanging-fruit
-  - Progress on https://github.com/weaveworks/kured/issues/140
+  - Progress on https://github.com/kubereboot/kured/issues/140
       - Christian is looking for feedback on the chart.
       - ACTION: Daniel to talk to Weaveworks Ops people to add deploy key.
       - Next steps (after merging) would be:
@@ -495,7 +495,7 @@ Agenda/Notes:
       - Christian: software dev from Bavaria, uses kured in his own k8s projects.
       - Michał: from Gdansk, works for a company in Belfast (didn’t catch the name), has a fork and a PR, wants to avoid having to carry the fork forever.
   - Review of actions from last meeting
-  - [ckotzbauer] [Moving Helm Chart into kured repository](https://github.com/weaveworks/kured/issues/140)
+  - [ckotzbauer] [Moving Helm Chart into kured repository](https://github.com/kubereboot/kured/issues/140)
       - ACTION: Daniel and Christian to meet up (potentially next week) to review the Helm chart, especially options, etc to see if we want to maintain this from now on.
       - Christian agreed to be point of contacts for the chart for now.
       - Daniel can reach out to people in Weaveworks - we have some prior knowledge in publishing charts, etc.
@@ -504,14 +504,14 @@ Agenda/Notes:
       - Some discussion around Helm 3 and implications.
       - ACTION: Daniel to reach out to Flux team to figure out how they do Helm chart releases.
   - [evrardjp] Automated testing using KinD
-      - Following up from last meeting: we have bash script that does a complete run: https://github.com/weaveworks/kured/pull/141
+      - Following up from last meeting: we have bash script that does a complete run: https://github.com/kubereboot/kured/pull/141
       - Daniel took a look at what Flux uses: GH Actions, KinD and bats.
         - this is what e.g. a bats test can look like: https://github.com/fluxcd/flux/blob/master/test/e2e/11_fluxctl_install.bats
         - feedback from the Flux team was: in CircleCI e2e tests would flake a lot - that's gone with moving to GH Actions
       - ACTION: evrardjp to refresh the PR and try to cleanup with the gh actions/kind + bats
   - [michał]: Outstanding PRs
       - Core feature has landed, another PR is still outstanding.
-      - https://github.com/weaveworks/kured/pull/144
+      - https://github.com/kubereboot/kured/pull/144
       - ACTION: Daniel to reach out to Bryan (or others) to make sure we get this landed.
   - Community participation
       - [evrardjp]: ACTION: go through issue list again and mark issues as low-hanging-fruit
@@ -529,7 +529,7 @@ Agenda/Notes:
   - Introductions: who are you, what would you like to see in kured?
   - Review of actions from last meeting
       - ACTION: Daniel to set up milestone for next release, including 1.18 support.
-          - https://github.com/weaveworks/kured/milestone/2
+          - https://github.com/kubereboot/kured/milestone/2
       - ACTION: Daniel to set up monthly meetings for now.
           - Done. Unfortunately had to recreate the meeting.
       - ACTION: Daniel to reach out to Helm chart authors and invite them to the next meeting.
@@ -556,11 +556,11 @@ Agenda/Notes:
               - ACTION: Daniel to take a look at this again. Invite ALL committers to channel and meetings.
                   - ✅ but wasn’t able to find emails for @chrpme, @patrickmslatteryvt, @lumi017, @insertjokehere.
 
-  - Daniel: Review of [1.4.0 milestone](https://github.com/weaveworks/kured/milestone/2). Let’s get the release out.
+  - Daniel: Review of [1.4.0 milestone](https://github.com/kubereboot/kured/milestone/2). Let’s get the release out.
       - ACTION: Daniel to move client-go and kubectl back to 1.17.
       - Test over the weekend. Get release out on Monday(?).
   - ACTION: JP to check if kind is an option for testing kured.
-  - Some discussion of https://github.com/weaveworks/kured/issues/124 - would be nice to get some feedback from the rest of the team about it. Certainly would reduce image size and compatibility matrix size.
+  - Some discussion of https://github.com/kubereboot/kured/issues/124 - would be nice to get some feedback from the rest of the team about it. Certainly would reduce image size and compatibility matrix size.
 
 ### 2020-03-25 16:00 UTC
 [Link to Recording](https://youtu.be/Xc-tkNb6zNk)
@@ -584,7 +584,7 @@ Agenda/Notes:
   - Adam: some history, Weaveworks requirements of kured.
   - What do we still want to get merged for the next release?
       - JP: Nothing urgent on the SUSE side. Make sure it works with most recent k8s releases.
-      - Question: regular builds and tests? Adam says: it’d be great if we could do something here. In the past Adam updated when he worked on kured. Some process and notes available in https://github.com/weaveworks/kured/blob/master/DEVELOPMENT.md
+      - Question: regular builds and tests? Adam says: it’d be great if we could do something here. In the past Adam updated when he worked on kured. Some process and notes available in https://github.com/kubereboot/kured/blob/master/DEVELOPMENT.md
       - Is automated e2e tests something we want?
       - Integration test for locking code would be great to see. Test against etcd and api server.
       - Ace could maybe help with some of the test automation.
@@ -597,9 +597,9 @@ Agenda/Notes:
           - It would be good if we could reuse the drain from the module instead of bundling the whole kubectl for drain.
           - Check issues, see if there’s one.
       - ACTION: Daniel to set up milestone for next release, including 1.18 support.
-          - https://github.com/weaveworks/kured/milestone/2
+          - https://github.com/kubereboot/kured/milestone/2
   - Questions
   - Next meeting time
       - ACTION: Daniel to set up monthly meetings for now.
       - ACTION: Daniel to reach out to Helm chart authors and invite them to the next meeting.
-  - Reminder: we also hang out in #kured on [Weave Slack](https://slack.weave.works/).
+  - ~~Reminder: we also hang out in #kured on Weave Slack.~~
