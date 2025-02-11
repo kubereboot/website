@@ -240,7 +240,7 @@ Here is the syntax:
     `slack://xoxb:123456789012-1234567890123-4mt0t4l1YL3g1T5L4cK70k3N@<CHANNEL_NAME>?botname=<BOTNAME>`\
     for more information, [look here](https://containrrr.dev/shoutrrr/v0.7/services/slack/#examples)
 
-- rocketchat:      `rocketchat://[username@]rocketchat-host/token[/channel|@recipient]`
+- rocketchat:      `rocketchat://[username@]rocketchat-host/hooks/token[/channel|@recipient]`
 
 - teams:           `teams://group@tenant/altId/groupOwner?host=organization.webhook.office.com`
 
