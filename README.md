@@ -23,6 +23,6 @@ make serve
 
 Navigate to `http://localhost:1313` to see the site running in your browser. As you make updates to the site, the browser will immediately update to reflect those changes.
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkubereboot%2Fwebsite.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkubereboot%2Fwebsite?ref=badge_large)
