@@ -261,7 +261,7 @@ certainly safe.
 
 ## Concurrent reboots
 
-> Note: Concurrent reboots are not save for production environments as
+> Note: Concurrent reboots are not safe for production environments as
 > there are no safeguards related to workloads on simultaneously rebooted nodes.
 
 The `--concurrency` argument can be configured to reboot multiple nodes at once.

@@ -58,7 +58,7 @@ taints:
 
 In order to make kured run on these nodes as well we will need to edit the daemonset of the deployment.
 
-You can get a full deployment file by running the followig command:
+You can get a full deployment file by running the following command:
 
 ```bash
 # while writing latest is 1.20.0
@@ -78,7 +78,7 @@ tolerations:
 
 In the docs about [taint and toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) you an read up about the concept.
 
-In Order to tollerate kured on the tainted nodes change this section into:
+In order to tolerate kured on the tainted nodes change this section into:
 
 ```yaml
 tolerations:
@@ -86,7 +86,7 @@ tolerations:
     operator: Exists
 ```
 
-after applying the `kured-1.20.0-combined.yaml` file you can check the number of pods with:
+After applying the `kured-1.20.0-combined.yaml` file you can check the number of pods with:
 
 ```bash
 kubectl -n kube-system get daemonsets/kured
