@@ -84,6 +84,6 @@ params:
 menus:
   main:
   - url: https://github.com/kubereboot/kured
-    name: Github
+    name: GitHub
     pre: "<i class='fab fa-github'></i> "
     weight: 100
