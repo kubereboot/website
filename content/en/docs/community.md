@@ -24,6 +24,22 @@ If you need to call for a synchronous meeting, do not hesitate to ask for it on 
 
 ## Past Meetings
 
+### 2025-09-03 1600 UTC
+
+Attendees:
+
+- Jean-Philippe Evrard
+- Dharsan Baskar
+
+Agenda:
+
+- Introduction - anyone new to the call?
+  - Presentation of Dharsan
+- Presenting publicly the plan for v2 (currently in google docs)
+  - No objections to plan
+  - The plan needs to be converted to a blog post
+
+
 ### 2024-06-06 1600 UTC
 
 Attendees:
