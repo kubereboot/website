@@ -61,12 +61,12 @@ In order to make kured run on these nodes as well we will need to edit the daemo
 You can get a full deployment file by running the following command:
 
 ```bash
-# while writing latest is 1.20.0
+# while writing latest is 1.21.0
 latest=$(curl -s https://api.github.com/repos/kubereboot/kured/releases | jq -r '.[0].tag_name')
 wget "https://github.com/kubereboot/kured/releases/download/$latest/kured-$latest-combined.yaml"
 ```
 
-In the `kured-1.20.0-combined.yaml` the daemonset has the following tolerations:
+In the `kured-1.21.0-combined.yaml` the daemonset has the following tolerations:
 
 ```yaml
 tolerations:
@@ -86,7 +86,7 @@ tolerations:
     operator: Exists
 ```
 
-After applying the `kured-1.20.0-combined.yaml` file you can check the number of pods with:
+After applying the `kured-1.21.0-combined.yaml` file you can check the number of pods with:
 
 ```bash
 kubectl -n kube-system get daemonsets/kured
